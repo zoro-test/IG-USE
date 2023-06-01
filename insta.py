@@ -13,9 +13,9 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 app = Client(
     ":memory:",
-    api_id=Config.26849554,
-    api_hash=Config.80cea917dbb6994312c9994439c0763a,
-    bot_token=Config.6076432008:AAG4WIC5CQIB1mqazR5lAXHRb6-E0rLQX50,
+    api_id= '26849554'
+    api_hash= '80cea917dbb6994312c9994439c0763a'
+    bot_token= '6076432008:AAG4WIC5CQIB1mqazR5lAXHRb6-E0rLQX50'
     plugins=dict(root="Instaloader"),
 )
 
