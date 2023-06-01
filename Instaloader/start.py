@@ -9,7 +9,7 @@ async def start(bot, message):
 	user = await bot.get_me()
 	mention = user["mention"]
 	await bot.send_message(
-		.chat.id,
-		Data.START.format(msg.from_user.mention, mention),
+		message.chat.id,
+		Data.START.format(message.from_user.mention, mention),
 		reply_markup=InlineKeyboardMarkup(Data.buttons)
 	)
