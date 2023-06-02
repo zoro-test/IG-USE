@@ -5,12 +5,12 @@ from pyrogram.types import InlineKeyboardMarkup
 
 # Start Message
 @Client.on_message(filters.private & filters.incoming & filters.command("start"))
-async def start_command(bot, message):
+async def start_command(bot, Message.id):
 	
 	user = await bot.get_me()
 	mention = user["mention"]
 	await bot.send_message(
-		message.chat_id,
-		Data.START.format(message.from_user.mention, mention),
+		essage.id,
+		Data.START.format(Message.from_user.mention, mention),
 		reply_markup=InlineKeyboardMarkup(Data.buttons)
 	)
