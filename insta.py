@@ -15,7 +15,7 @@ app = Client(
     ":memory:",
     api_id= 26849554,
     api_hash= '80cea917dbb6994312c9994439c0763a',
-    bot_token= '6076432008:AAG4WIC5CQIB1mqazR5lAXHRb6-E0rLQX50',
+    bot_token= '6076432008:AAFfjkMB-bRRAn3LKptgCQgy2bYy3xuQwDw',
     plugins=dict(root="Instaloader"),
 )
 
