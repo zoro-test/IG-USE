@@ -11,6 +11,6 @@ async def start_command(bot, message):
 	mention = user["mention"]
 	await bot.send_message(
 		essage.id,
-		Data.START.format(Message.from_user.mention, mention),
+		Data.START.format(Message.from_user.id, mention),
 		reply_markup=InlineKeyboardMarkup(Data.buttons)
 	)
